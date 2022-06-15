@@ -1,0 +1,38 @@
+﻿@using Portfolio.ViewModel
+@model List<ProjectViewModel>
+@{
+    ViewData["Title"] = "Project Page";
+}
+
+<section class="projects--section" id="projects">
+    <h2 class="h-2">What i have been working on</h2>
+    <p>
+        I love to stay busy and get myself immersed in building projects. Take a look at some of the projects I've dedicated my time to.
+    </p>
+    @foreach (var data in Model)
+    {
+        <div div class="projects" asp-controller="Home" asp-action="Projects">
+            <div class="projects__box">
+                <img class="projects__image" src="@data.ImgUrl" alt="Uplant" />
+                <h3 class="projects__name">@data.Title</h3>
+                <p class="projects__description">@data.Description</p>
+                <a href="projects/uplant.html" class="projects__link">
+                    View Project
+                    <span>›</span>
+                </a>
+            </div>
+        </div>
+
+
+    }
+
+    <div class="center-item mt-50">
+        <a class="btn btn--white" href="https://github.com/mannypulator" target="_blank" rel="noopener noreferrer">
+            See More Projects
+        </a>
+    </div>
+
+</section>
+
+
+

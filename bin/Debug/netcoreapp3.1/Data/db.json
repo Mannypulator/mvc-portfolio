@@ -1,0 +1,50 @@
+﻿[
+
+  {
+    "id": "1",
+    "title": "Uplant",
+    "description": "A landing page for Uplant",
+    "url": "https://res.cloudinary.com/mannypulator/image/upload/v1655196482/Uplant_b9q6ku.png"
+  },
+  {
+    "id": "2",
+    "title": "Photosnap",
+    "description": "A web design project for a photo agency",
+    "url": "https://res.cloudinary.com/mannypulator/image/upload/v1655196466/Photosnap_huftb7.png"
+  },
+  {
+    "id": "3",
+    "title": "La Hotel",
+    "description": "A Website design for a hotel",
+    "url": "https://res.cloudinary.com/mannypulator/image/upload/v1655196460/La-Hotel_dxzjbe.png"
+  },
+  {
+    "id": "4",
+    "title": "Photography",
+    "description": "A portfolio website for a photographer",
+    "url": "https://res.cloudinary.com/mannypulator/image/upload/v1655196466/Photography_hqc0lr.png"
+  },
+  {
+    "id": "5",
+    "title": "Furnish",
+    "description": "An ecommerce website for a furniture and interior decoration agency",
+    "url": "https://res.cloudinary.com/mannypulator/image/upload/v1655196456/Furnish_koemyo.png"
+  },
+  {
+    "id": "6",
+    "title": "Earl 1",
+    "description": "Alanding page for Earl 1",
+    "url": "https://res.cloudinary.com/mannypulator/image/upload/v1655196453/ear1_uo8sgy.png"
+  },
+  {
+    "id": "7",
+    "title": "Bakery",
+    "description": "A multipage website for a bakery business",
+    "url": "https://res.cloudinary.com/mannypulator/image/upload/v1655196451/Bakery_mkz6pz.jpg"
+  }
+
+
+
+
+
+]
