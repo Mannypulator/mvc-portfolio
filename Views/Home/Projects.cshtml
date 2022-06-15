@@ -2,6 +2,7 @@
 @model List<ProjectViewModel>
 @{
     ViewData["Title"] = "Project Page";
+   
 }
 
 <section class="projects--section" id="projects">
@@ -9,22 +10,50 @@
     <p>
         I love to stay busy and get myself immersed in building projects. Take a look at some of the projects I've dedicated my time to.
     </p>
-    @foreach (var data in Model)
-    {
-        <div div class="projects" asp-controller="Home" asp-action="Projects">
-            <div class="projects__box">
-                <img class="projects__image" src="@data.ImgUrl" alt="Uplant" />
-                <h3 class="projects__name">@data.Title</h3>
-                <p class="projects__description">@data.Description</p>
-                <a href="projects/uplant.html" class="projects__link">
-                    View Project
-                    <span>›</span>
-                </a>
-            </div>
+   
+        <div div class="projects">
+             @foreach (var data in Model)
+             {
+                 @switch(data.Id)
+            {
+                case "1":
+                    data.ImgUrl = "~/img/Uplant.png";
+                    break;
+                 case "2":
+                    data.ImgUrl = "~/img/Photosnap.png";
+                    break;
+                 case "3":
+                    data.ImgUrl = "~/img/La-Hotel.png";
+                    break;
+                 case "4":
+                    data.ImgUrl = "~/img/Photography.png";
+                    break;
+                 case "5":
+                    data.ImgUrl = "~/img/Furnish.png";
+                    break;
+                 case "6":
+                    data.ImgUrl = "~/img/ear1.png";
+                    break;
+                 case "7":
+                    data.ImgUrl = "~/img/Bakery.jpg";
+                    break;
+
+            }
+            <div class="projects__box" asp-controller="Home" asp-action="Projects">
+                    
+                    <img class="projects__image" src="@data.ImgUrl" alt="Uplant" asp-append-version="true">
+                    <h3 class="projects__name">@data.Title</h3>
+                    <p class="projects__description">@data.Description</p>
+                    <a href="#" class="projects__link">
+                        View Project
+                        <span>›</span>
+                    </a>
+                </div>
+            }
         </div>
 
 
-    }
+    
 
     <div class="center-item mt-50">
         <a class="btn btn--white" href="https://github.com/mannypulator" target="_blank" rel="noopener noreferrer">
