@@ -14445,6 +14445,11 @@
       "FilePath": "c:\\Users\\23480\\Documents\\Portfolio\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\23480\\Documents\\Portfolio\\Views\\Home\\Resume.cshtml",
+      "TargetPath": "Views\\Home\\Resume.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

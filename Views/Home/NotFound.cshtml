@@ -1,6 +1,13 @@
-﻿namespace Portfolio.Views.Home
-{
-    public class NotFound
-    {
-    }
+﻿
+@{
+    ViewData["Title"] = "404 Page";
+   
 }
+
+<section class="contact--section" id="contact">
+    <h2 class="h-2 mt-5">404 Page</h2>
+    <p>
+       This page you requested does not exist. Kindly Go back to the homepage.
+    </p>
+    <a class="mail" asp-controller="Home" asp-action="Index" rel="noopener noreferrer">Home</a>
+</section>

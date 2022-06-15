@@ -40,3 +40,4 @@ C:\Users\23480\Documents\Portfolio\bin\Debug\netcoreapp3.1\AutoMapper.Extensions
 C:\Users\23480\Documents\Portfolio\obj\Debug\netcoreapp3.1\Razor\Views\Home\NotFound.cshtml.g.cs
 C:\Users\23480\Documents\Portfolio\obj\Debug\netcoreapp3.1\Razor\Views\Home\Projects.cshtml.g.cs
 C:\Users\23480\Documents\Portfolio\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\23480\Documents\Portfolio\obj\Debug\netcoreapp3.1\Razor\Views\Home\Resume.cshtml.g.cs

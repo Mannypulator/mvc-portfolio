@@ -9,37 +9,53 @@
 
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand h-1" asp-area="" asp-controller="Home" asp-action="Index">Manny</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1 mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact Me</a>
-                        </li>
-                    </ul>
+    <!-- NAV SECTION -->
+    <div class="nav--first">
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="logo--blue">Manny</a>
+        <div class="nav--icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <div class="nav--second">
+        <a href="#hero" class="logo--white">Manny</a>
+        <div class="nav--second__content">
+            <!-- first box -->
+            <div class="nav--second__content--box">
+                <h4 class="h-4">Web Profiles</h4>
+                <div class="web--profiles">
+                    <div class="web--profiles__box">
+                        <a href="#"><img src="~/img/github.svg" alt="github"></a>
+                        <a href="#"><img src="~/img/codepen.svg" alt="codepen"></a>
+                        <a href="#"><img src="~/img/dribbble.svg" alt="dribbble"></a>
+                    </div>
+                    <div class="web--profiles__box">
+                        <a href="#"><img src="~/img/linkedin.svg" alt="linkedin"></a>
+                        <a href="#"><img src="~/img/twitter.svg" alt="twitter"></a>
+                        <a href="#"><img src="~/img/instagram.svg" alt="instagram"></a>
+                    </div>
                 </div>
+                <a class="resume-link" asp-area="" asp-controller="Home" asp-action="Resume">Resume 📙</a>
             </div>
-        </nav>
-    </header>
+            <!-- second box -->
+            <div class="nav--second__content--box">
+                <h4 class="h-4">Menu</h4>
+                <ul class="nav__list">
+                    <li class="nav__list--item"><a asp-area="" asp-controller="Home" asp-action="Index" class="nav__link">Home</a></li>
+                    <li class="nav__list--item"><a asp-area ="" asp-controller="Home" asp-action="Projects" class="nav__link">Projects</a></li>
+                    <li class="nav__list--item"><a asp-area="" asp-controller="Home" asp-action="Contact" class="nav__link">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-   <footer class="footer">
+    <footer class="footer">
         <a href="#" class="logo--blue">Manny</a>
         <ul class="footer__list">
             <li class="footer__item">
